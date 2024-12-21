@@ -12,20 +12,16 @@ public class for1 {
         int ending = scan.nextInt();
         scan.close();
 
-
-int count = 0 ;
         for (int i = starting; i <= ending; i++) {
 
-            if (i % 2 == 0) {
+            if (i % 3 == 0 && i % 5 == 0) {
+
                 System.out.println(i);
-            } else if (i % 2 == 1) {
-                System.out.println(i);
-                count = count+1;
-                
+
             }
-            
+
         }
-            System.out.println(count);
+
     }
 
 }
